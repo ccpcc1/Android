@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblIdetifiacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:gravity="left|center_vertical"
+        android:text="Identificacion"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/txtIdentificacion"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblIdetifiacion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lblNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="115dp"
+        android:gravity="left|center_vertical"
+        android:text="Nombres"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/txtNombres"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblNombres"
+        android:layout_alignStart="@+id/txtIdentificacion" />
+
+    <TextView
+        android:id="@+id/lblApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtApellidos"
+        android:layout_alignParentStart="true"
+        android:gravity="left|center_vertical"
+        android:text="Apellidos"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/txtApellidos"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtIdentificacion"
+        android:layout_marginTop="183dp" />
+</RelativeLayout>
